@@ -23,7 +23,7 @@ interface Buddy {
 function App() {
   // # nugaon # mollas # metacertain
   // default bee is pointing to the gateway
-  const [bee, setBee] = useState<Bee>(new Bee('http://localhost:1633'))
+  const [bee, setBee] = useState<Bee>(new Bee('https://bee-1.dev.fairdatasociety.org'))
   const [friends, setFriends] = useState<React.ReactElement[]>([])
   const [showAddFriend, setShowAddFriend] = useState(false)
   const [buddy, setBuddy] = useState<Buddy | null>(null)
